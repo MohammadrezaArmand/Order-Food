@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00789a"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityMain">
+
+
+
+    <LinearLayout
+        android:id="@+id/lytopcal"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/caloribanner"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtcalori"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="0.60"
+            android:fontFamily="serif-monospace"
+            android:gravity="right"
+            android:paddingRight="12dp"
+            android:text="0000"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shapelycalori"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/rdmen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.50"
+                    android:buttonTint="#FFFFFF"
+                    android:checked="true"
+                    android:text="Men"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rdwomen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Women"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    app:useMaterialThemeColors="false" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/shapelycalori"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/edtage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FFFFFF"
+                        android:ems="10"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:textColor="#FDFDFD"
+                        android:textColorHint="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/shapelycalori"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/edtheight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#F6F6F6"
+                        android:ems="10"
+                        android:hint="Height "
+                        android:inputType="number"
+                        android:textColor="#FDFDFD"
+                        android:textColorHint="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/shapelycalori"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/edtweight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F6F6F6"
+                        android:ems="10"
+                        android:hint="Weight "
+                        android:inputType="number"
+                        android:textColor="#FDFDFD"
+                        android:textColorHint="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rd4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shapelycalori"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/rd41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:checked="true"
+                    android:text="Sedentary (little or no exercise)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rd42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Lightly active (exercise 1–3 days/week)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rd43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Moderately active (exercise 3–5 days/week)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rd44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Active (exercise 6–7 days/week)"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rd45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FFFFFF"
+                    android:text="Very active (hard exercise 6–7 days/week)"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#F16A4D"
+                    android:gravity="center"
+                    android:text="Calorie" />
+
+                <Button
+                    android:id="@+id/btnbackmain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Main Menu" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

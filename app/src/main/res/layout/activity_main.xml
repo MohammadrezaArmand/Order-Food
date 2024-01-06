@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="0.30"
+            android:orientation="horizontal">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/denslider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="16"
+                app:iss_delay="0"
+                app:iss_period="2000">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/slid111" />
+            </com.denzcoskun.imageslider.ImageSlider>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/lyleft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.37"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgkcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/kcal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgwallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/wallet" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyright"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.37"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgprofile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/profile" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgmessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/message" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.27"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:id="@+id/lycake"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgfood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/foodnew" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyicecream"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgcaffe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/caffenew" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.27"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:id="@+id/lydrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgdrink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/juicenew" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgicecream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/icenew" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.09"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cartnew" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyfood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgreserve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/reservnew" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

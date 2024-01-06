@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.armand.foodorder">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodOrder"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ActivityMain"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ActivityFood"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ActivityCalori"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityCaffe"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityDrinking"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityReservation"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityOrder"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivitySignUp"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ActivityReservationShow"
+            android:exported="true">
+        </activity>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name=".ActivityAddFood"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityAdmin"
+            android:exported="true">
+
+
+
+        </activity>
+        <activity
+            android:name=".ZActivityOrder"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityCustomer"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityOrderName"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityReservation"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".ZActivityListFood"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityAddNeg"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityListSubject"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityListGain"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ZActivityGainFinal"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="true">
+
+
+        </activity>
+
+    </application>
+
+</manifest>

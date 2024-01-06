@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/firstnew"
+    tools:context=".ActivityMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtmobilefirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AF9292"
+            android:drawableLeft="@drawable/person_pin_24"
+            android:ems="10"
+            android:foregroundTint="#ffffff"
+            android:hint="Mobile "
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FDFDFD"
+            android:textColorHint="#AE9898" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtpassfirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AF9292"
+            android:drawableLeft="@drawable/lock_open_24"
+            android:ems="10"
+            android:foregroundTint="#ffffff"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#FDFDFD"
+            android:textColorHint="#AE9898" />
+
+
+        <com.skydoves.elasticviews.ElasticButton
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/shapee"
+            android:text="Log in"
+            android:textColor="#AE9898"
+            android:textSize="17sp"
+            app:button_cornerRadius="4dp"
+            app:button_duration="250"
+            app:button_scale="0.87" />
+
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Sing Up"
+            android:textColor="#AF9292"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
